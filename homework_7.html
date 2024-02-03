@@ -9,24 +9,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="homework_7.css" />
+    <link href="hamburbur.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="navigation-block">
-        <a href="#">LOGO</a>
-
-        <nav class="navigation" id="navBar">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="burger-bar" id="burgerBar">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
+      
     </header>
 
     <section>
@@ -50,6 +37,21 @@
     <section>
       <div id="container"></div>
     </section>
+    <section>
+      <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+              <span class="hamburger-inner">  </span>
+          </span>
+      </button>
+      <menu class="navbar isactive">
+          <ul>
+              <li><b>home</b></li>
+              <li><b>portfolio</b></li>
+              <li><b>images</b></li>
+              <li><b>contact</b></li>
+          </ul>
+      </menu>
+  </section>
     <script src="https://kit.fontawesome.com/235703e32f.js" crossorigin="anonymous"></script>
     <script src="homework_7.js"></script>
   </body>

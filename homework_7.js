@@ -1,3 +1,6 @@
+//1
+
+
 const inputElement = document.getElementById("listelement");
 const btnAdd = document.getElementById("btn-add");
 const ulElement = document.getElementById("ul-element");
@@ -6,12 +9,11 @@ const FormElement = document.getElementById("form-element");
 
 FormElement.addEventListener("submit", function (e) {
   e.preventDefault();
-  // 1. get input value
+
   let userInputValue = inputElement.value;
   if (userInputValue === " ") {
     return;
   }
-  // 2.input value in li -> ul
   let liElement = document.createElement("li");
   liElement.textContent = userInputValue;
 
@@ -29,10 +31,19 @@ FormElement.addEventListener("submit", function (e) {
   
   
 
-  // 3.
+
   inputElement.value = " ";
 });
 
 deleteBtnAll.addEventListener("click", function () {
   ulElement.innerHTML = " ";
+});
+//2
+
+let hamburger = document.querySelector(".hamburger");
+let menu = document.querySelector(".navbar");
+hamburger.addEventListener("click", function () { 
+  hamburger.classList.toggle("is-active");
+  menu.classList.toggle("active");
+  console.log(hamburger);
 });
